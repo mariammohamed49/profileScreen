@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">ScreenForProfile</string>
+    <string name="age">22 years old</string>
+    <string name="email">marioomalsaidi@gmail.com</string>
+    <string name="job">Mobile App developer</string>
+    <string name="forContactMe">contact me</string>
+    <string name="name">Maraim Mohamed</string>
+    <string name="myage">myAge</string>
+    <string name="myemailaddress">myEmailAddress</string>
+    <string name="myjob">myJob</string>
+</resources>

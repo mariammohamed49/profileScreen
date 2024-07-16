@@ -1,0 +1,158 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+   <androidx.cardview.widget.CardView
+       android:id="@+id/cardView1"
+       android:layout_width="0dp"
+       android:layout_height="0dp"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintTop_toTopOf="parent"
+       app:layout_constraintHeight_percent="0.33"
+       android:layout_margin="8dp"
+       app:cardCornerRadius="20dp"
+       android:elevation="4dp"
+       >
+       <androidx.constraintlayout.widget.ConstraintLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:background="@drawable/shape">
+
+           <de.hdodenhof.circleimageview.CircleImageView
+               android:id="@+id/circleImage1"
+               android:layout_width="0dp"
+               android:layout_height="0dp"
+               android:layout_margin="7dp"
+               android:src="@drawable/hello"
+               app:layout_constraintEnd_toEndOf="parent"
+               app:layout_constraintHeight_percent="0.66"
+               app:layout_constraintStart_toStartOf="parent"
+               app:layout_constraintTop_toTopOf="parent">
+
+           </de.hdodenhof.circleimageview.CircleImageView>
+
+           <TextView
+               android:id="@+id/textView1"
+               android:layout_width="wrap_content"
+               android:layout_height="0dp"
+               android:layout_marginHorizontal="20dp"
+               android:layout_marginVertical="7dp"
+               android:shadowColor="@color/yellow"
+               android:shadowDx="5"
+               android:shadowRadius="2"
+               android:text="sign in"
+               android:textColor="@color/bblue"
+               android:textSize="40dp"
+               app:layout_constraintEnd_toEndOf="parent"
+               app:layout_constraintHeight_percent="0.33"
+               app:layout_constraintStart_toStartOf="parent"
+               app:layout_constraintTop_toBottomOf="@id/circleImage1">
+
+           </TextView>
+
+
+       </androidx.constraintlayout.widget.ConstraintLayout>
+   </androidx.cardview.widget.CardView>
+    <androidx.constraintlayout.widget.ConstraintLayout
+
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cardView1"
+        app:layout_constraintVertical_bias="0.5">
+
+        <EditText
+            android:id="@+id/editText1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:background="@drawable/shape"
+            android:hint="Enter User Name"
+            android:inputType="text"
+            android:textColor="@color/blue"
+            android:textColorHighlight="@color/babyYellow"
+            android:textColorHint="@color/bblue"
+            android:textSize="20sp"
+            android:textStyle="bold|italic"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:paddingVertical="20dp"
+            android:paddingStart="10dp"
+            tools:ignore="MissingConstraints,NotSibling">
+
+        </EditText>
+
+        <EditText
+            android:id="@+id/editText2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:hint="Enter Your Email"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/blue"
+            android:textColorHighlight="@color/babyYellow"
+            android:textColorHint="@color/bblue"
+            android:textSize="20sp"
+            android:paddingVertical="20dp"
+            android:paddingStart="10dp"
+            android:textStyle="bold|italic"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.4"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/editText1"
+            android:background="@drawable/shape"
+            >
+
+        </EditText>
+
+        <EditText
+            android:id="@+id/editText3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:background="@drawable/shape"
+            android:hint="Enter Your password"
+            android:inputType="textPassword"
+            android:textColor="@color/blue"
+            android:textColorHighlight="@color/babyYellow"
+            android:textColorHint="@color/bblue"
+            android:textSize="20sp"
+            android:textStyle="bold|italic"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/editText2"
+            android:paddingVertical="20dp"
+            android:paddingStart="10dp">
+
+        </EditText>
+
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:background="@color/babyBlue"
+            android:text="click here"
+            android:textColor="@color/blue"
+            android:textSize="20sp"
+            android:textStyle="bold|italic"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/editText3"></Button>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
